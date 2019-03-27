@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title></title>
+  </head>
+    <body>
+     <div class="container">
+       <h1>Make an appointment</h1>
+       <div class="row">
+         <div class="col-md-6">
+           
+           <form id="formOne">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input id="name" class="form-control" type="text">
+            </div>
+            
+            <div class="form-group">
+              <label for="reason">Reason for your visit</label>
+              <input id="reason" class="form-control" type="text">
+            </div>
+            
+            <div class="form-group">
+              <label for="date">Preferred date</label>
+              <input id="date" class="form-control" type="text">
+            </div>
+            
+            <div class="form-group">
+              <label for="time">Preferred time</label>
+              <input id="time" class="form-control" type="text">
+            </div>
+            
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+        <div id="story">
+            <div class="col-md-6"
+            <div class="panel panel-info">
+            <div class="panel-heading">
+              <h1>Your Confirmation</h1>
+            </div>
+            <div class="panel-body">
+            <ul>
+              <li>Name: <span class="name"></span></li>
+              <li>For: <span class="reason"></span></li>
+              <li>On: <span class="date"></span></li>
+              <li>At: <span class="time"></span></li>
+            </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

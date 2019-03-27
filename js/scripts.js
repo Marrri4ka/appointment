@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-  $("#formOne").submit(function(event) {
+  $("#formOne").click(function(event) {
     var name = $("input#name").val();
     var reason = $("input#reason").val();
     var date = $("input#date").val();
@@ -12,7 +12,8 @@ $(document).ready(function() {
     $(".date").text(date);
     $(".time").text(time);
 
-    $("#story").show();
+    $("#story").fadeIn();
+    $("#formOne").fadeOut();
 
     event.preventDefault();
   });
